@@ -8,7 +8,8 @@ import {HomePage} from "./home/home.component";
   selector: "main",
   directives: [NS_ROUTER_DIRECTIVES],
   providers: [NS_ROUTER_PROVIDERS],
-  template: "<page-router-outlet></page-router-outlet>"
+  template: "<page-router-outlet></page-router-outlet>",
+	stylesUrl: "./app.css"
 })
 @RouteConfig([
   { path: "/login", component: LoginPage, name: "Login", useAsDefault: true },
